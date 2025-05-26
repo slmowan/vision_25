@@ -1,37 +1,100 @@
-# 首页
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VISION24 @ ECCV</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VISION24 @ ECCV</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      background: #fff;
+      color: #000;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0.65rem 1rem;
+      margin: 0;
+    }
+    nav li {
+      margin: 0 2.2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-size: 0.7rem;
+      font-weight: 300;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/4/47/Piazza_Duomo_-_Milano.jpg') center/cover no-repeat;
+      text-align: center;
+      padding-top: 4rem;
+    }
+    .hero img {
+      width: 400px;
+      max-width: 80%;
+    }
+    .card {
+      background: white;
+      max-width: 800px;
+      margin: -3rem auto 4rem;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.4;
+    }
+    .highlight {
+      color: #e10098;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>VISION24: Vision-based Industrial Inspection</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cfp.html">Call for Papers</a></li>
-                <li><a href="program.html">Program</a></li>
-                <li><a href="speakers.html">Speakers</a></li>
-                <li><a href="committee.html">Committee</a></li>
-                <li><a href="accepted.html">Accepted Papers</a></li>
-            </ul>
-        </nav>
-    </header>
+  <nav>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#cfp">Call for Papers</a></li>
+      <li><a href="#organizers">Organizers</a></li>
+      <li><a href="#prior">Prior Workshops</a></li>
+      <li><a href="#follow">Follow us</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <h2>Welcome to VISION24 @ ECCV</h2>
-        <p>The 2nd Workshop on Vision-based Industrial Inspection (VISION) will be held in conjunction with ECCV 2024 in Milan, Italy.</p>
-        <p>Stay tuned for important dates and program updates!</p>
-        <p><a href="https://cmt3.research.microsoft.com/VISION2024">Submit Your Paper via CMT</a></p>
-    </main>
+  <div class="hero">
+    <img src="https://vision-based-industrial-inspection.github.io/eccv-24/assets/img/vision_logo.png" alt="VISION 24 logo">
+  </div>
 
-    <footer>
-        <p>&copy; 2024 VISION Workshop</p>
-    </footer>
+  <div class="card" id="overview">
+    <img src="https://vision-based-industrial-inspection.github.io/eccv-24/assets/imgs/iccv_logo.svg" alt="ICCV logo" width="100">
+    <h2>
+      2nd workshop on <span class="highlight">Vision</span>-based <span class="highlight">Indu</span>Strial <span class="highlight">Inspecti</span>ON (VISION)
+    </h2>
+    <p>Tower Lounge W15 @ ECCV 2024, Milano, Italy</p>
+    <p>9:30 - 13:00, Monday, Sept 30th</p>
+  </div>
 </body>
 </html>
